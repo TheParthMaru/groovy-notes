@@ -1,3 +1,26 @@
+# Groovy Language Notes
+
+- Object oriented, dynamic programming language for Java platform.
+- Created to simplify and enchance Java dev by providing flexible and concise syntax.
+- Integrates easily with existing Java code allowing devs to use existing libraries and frameworks with concise and dynamic syntax.
+- Also a scripting language where we can write quick scripts and execute it without the need of compilation.
+- Provides functional programming support with closures and higher order functions.
+- Groovy code gets compiled to Java bytecode, so it is compatible with JVM.
+
+## Use cases of groovy
+
+- Most useful scenario is when devs want to use the power of Java but need more concise and expressive code.
+- Scripting and automation: Automating build task in Jenkins or Gradle.
+- Build automation (gradle): Defining dependencies in `build.gradle`
+- Writing unit test for test automation.
+- Web deb: Building RESTful web services with Grails.
+- Domail specific language (DSLs)
+- Scripting in CI: Scripting Jenkins pipelines.
+
+## Comparison with Java
+
+![Java vs groovy table](/images/java_vs_groovy.png)
+
 ## Printing in groovy
 
 - `println()` adds a new line after the text is printed.

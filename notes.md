@@ -21,6 +21,14 @@
 
 ![Java vs groovy table](/images/java_vs_groovy.png)
 
+## Programming with groovy
+
+- We can download the groovy SDK from [official download page](https://groovy.apache.org/download.html)
+- Groovy scripts are created with `.groovy` extension.
+- If creating a groovy class, make sure the file name and the class name is same following PascalCase.
+- If creating a groovy script, the file name can be either PascalCase or snake_case.
+- Execute a groovy script with the command `groovy fileName.groovy`.
+
 ## Printing in groovy
 
 - `println()` adds a new line after the text is printed.

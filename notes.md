@@ -128,3 +128,18 @@ value = "Oh yeah" // Re-initialized value
 
 println value // Oh yeah
 ```
+
+## String interpolation
+
+- The `$` symbol is used for string interpolation which allows us to embed variables or expression directly in a string.
+- Makes it easy to concatenate string with variables without having to use the + operator.
+
+```groovy
+def name = "parth"
+def age = 26
+
+println("Hi, I am $name. I am $age years old")
+
+// Output:
+// Hi, I am parth. I am 26 years old
+```

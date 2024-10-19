@@ -334,3 +334,57 @@ switch (variable) {
         // code for default case
 }
 ```
+
+## Looping statements
+
+### for loop
+
+```groovy
+for (initialization; condition; increment) {
+    // code to execute
+}
+```
+
+### for-in loop
+
+- Used widely to loop over collections.
+
+```groovy
+// Syntax
+for (item in collection) {
+    // code to execute
+}
+
+// Example
+def str = "parth"
+
+for(character in str) {
+	println(character)
+}
+
+/*
+Output:
+p
+a
+r
+t
+h
+*/
+
+```
+
+### while loop
+
+```groovy
+while (condition) {
+    // code to execute
+}
+```
+
+### do-while loop
+
+```groovy
+do {
+    // code to execute
+} while (condition)
+```

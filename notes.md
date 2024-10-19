@@ -187,3 +187,106 @@ println(a instanceof Byte) // false
 println(a instanceof Short) // false
 println(a instanceof Integer) // true
 ```
+
+## Operators in groovy
+
+### Arithmetic operators
+
+![arithmetic-operators](images/arithmetic_operators.png)
+
+### Relational operators
+
+![relational-operators](images/relational_operators.png)
+
+### Logical operators
+
+![logical operators](images/logical_operators.png)
+
+### Bitwise operators
+
+![bitwise operators](images/bitwise-operators.png)
+
+### Assignment operators
+
+![assignment-operators](images/assignment_operators.png)
+
+### Ternary operator
+
+```groovy
+condition ? valueIfTrue : valueIfFalse
+```
+
+### Elvis operator
+
+- Shorthand version of the ternary operator when checking for `null` values.
+- If the expression on the left is `null`, it returns the expression on the right.
+
+```groovy
+// Syntax
+expression ?: defaultValue
+
+// Example
+def name = null
+def displayName = name ?: "Guest"
+println displayName // Guest
+```
+
+### Null safe operator
+
+- Prevents `NullPointerException`.
+- If the object is `null`, it will result in `null` instead of throwing the exception.
+
+```groovy
+// Syntax
+object?.method()
+
+// Example
+def person = null
+println person.name
+
+/*Output:
+Caught: java.lang.NullPointerException: Cannot get property 'name' on null object
+java.lang.NullPointerException: Cannot get property 'name' on null object
+	at Main.run(Main.groovy:2)
+*/
+
+println person?.name // null
+```
+
+### Range operator
+
+- Used to create a sequence of values such as numbers or characters.
+
+```groovy
+// Syntax
+start..end
+
+// Example
+def range1 = 1..5
+def range2 = 'a'..'e'
+
+println range1.toListString() // [1, 2, 3, 4, 5]
+println range2.toListString() // [a, b, c, d, e]
+```
+
+### Spread operator
+
+- The spread operator is used to invoke a method or access a property on all elements in a collection.
+
+```groovy
+def list = ['apple', 'banana', 'cherry']
+println list*.toUpperCase()  // Output: [APPLE, BANANA, CHERRY]
+```
+
+### Spaceship operator
+
+- The spaceship operator returns -1, 0, or 1 when comparing two values.
+- It's used for comparison and sorting.
+
+![spaceship_operator](images/spaceship_operator.png)
+
+```groovy
+println 5 <=> 3  // Output: 1
+println 5 <=> 5  // Output: 0
+println 3 <=> 5  // Output: -1
+```

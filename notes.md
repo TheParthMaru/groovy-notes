@@ -290,3 +290,47 @@ println 5 <=> 3  // Output: 1
 println 5 <=> 5  // Output: 0
 println 3 <=> 5  // Output: -1
 ```
+
+## Conditional statements
+
+### If-else
+
+```groovy
+if (condition) {
+    // code to execute if condition is true
+} else if (anotherCondition) {
+    // code to execute if anotherCondition is true
+} else {
+    // code to execute if all conditions are false
+}
+```
+
+#### Truthy and falsy values
+
+- Truthy values: Any non-null or non-false value (non-zero numbers, non-empty strings, collections).
+- Falsy values: null, false, empty collections or strings, and 0.
+
+```groovy
+def str = "Groovy"
+if (str) {
+    println "String is not empty"  // Evaluates true since str is non-empty
+}
+```
+
+### Switch case
+
+- Groovy's switch case can also evaluate strings, ranges and collections.
+
+```groovy
+// Syntax
+switch (variable) {
+    case value1:
+        // code for case 1
+        break
+    case value2:
+        // code for case 2
+        break
+    default:
+        // code for default case
+}
+```

@@ -10,6 +10,7 @@
 ```groovy
 // Creating a list
 def list = [1,2,3,4,5]
+println list.getClass() // class java.util.ArrayList
 
 // Accessing elements
 println list[0] // 1

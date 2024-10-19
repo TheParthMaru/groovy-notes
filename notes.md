@@ -143,3 +143,47 @@ println("Hi, I am $name. I am $age years old")
 // Output:
 // Hi, I am parth. I am 26 years old
 ```
+
+## Data types in groovy
+
+- Groovy is a dynamic programming language but also supports static declarations with the below data types:
+
+### Primitive data types
+
+![Primitive data types table](images/primitive_data_types_table.png)
+
+### Object data types
+
+![Object data types](images/object_data_types.png)
+
+### Collection types
+
+![Collection data types](images/collection_data_type.png)
+
+### Special data types
+
+![Special data types](images/special_data_type.png)
+
+### Primitive vs wrapper types
+
+![Primitive vs wrapper types](images/primitive_vs_wrapper.png)
+
+- When a variable is declared but not explicitly initialized, it generally defaults to `null`, except for primitive types that have their default values.
+
+### How to know a data type of a variable
+
+#### Using `getClass()`
+
+```groovy
+def a = 123
+println(a.getClass()) // Output: class java.lang.Integer
+```
+
+#### Using `instanceof`
+
+```groovy
+def a = 123
+println(a instanceof Byte) // false
+println(a instanceof Short) // false
+println(a instanceof Integer) // true
+```

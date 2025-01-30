@@ -205,3 +205,6 @@ map1.putAll(map2)
 
 println map1 // [name:parth, age:26, isEmployed:false, industry:IT, relationshipStatus:single]
 ```
+
+
+
